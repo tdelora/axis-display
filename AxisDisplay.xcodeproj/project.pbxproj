@@ -45,17 +45,12 @@
 			);
 			sourceTree = "<group>";
 		};
-		AA000000000000000007A000 /* AxisDisplay */ = {
+		AA000000000000000005A000 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA000000000000000008A000 /* AxisDisplayApp.swift */,
-				AA000000000000000009A000 /* ContentView.swift */,
-				AA00000000000000000AA000 /* MotionManager.swift */,
-				AA00000000000000000CA000 /* Assets.xcassets */,
-				AA00000000000000000BA000 /* Info.plist */,
+				AA000000000000000003A000 /* AxisDisplay.app */,
 			);
-			name = AxisDisplay;
-			path = "AxisDisplay/Sources/AxisDisplay";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AA000000000000000006A000 /* Frameworks */ = {
@@ -66,12 +61,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AA000000000000000005A000 /* Products */ = {
+		AA000000000000000007A000 /* AxisDisplay */ = {
 			isa = PBXGroup;
 			children = (
-				AA000000000000000003A000 /* AxisDisplay.app */,
+				AA000000000000000008A000 /* AxisDisplayApp.swift */,
+				AA000000000000000009A000 /* ContentView.swift */,
+				AA00000000000000000AA000 /* MotionManager.swift */,
+				AA00000000000000000CA000 /* Assets.xcassets */,
+				AA00000000000000000BA000 /* Info.plist */,
 			);
-			name = Products;
+			name = AxisDisplay;
+			path = AxisDisplay/Sources/AxisDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,16 +276,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52QK7N2P3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "AxisDisplay/Sources/AxisDisplay/Info.plist";
+				INFOPLIST_FILE = AxisDisplay/Sources/AxisDisplay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AxisDisplay";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AxisDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -300,16 +301,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52QK7N2P3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "AxisDisplay/Sources/AxisDisplay/Info.plist";
+				INFOPLIST_FILE = AxisDisplay/Sources/AxisDisplay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.AxisDisplay";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.AxisDisplay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
