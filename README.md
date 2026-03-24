@@ -13,13 +13,15 @@ Each value is shown in **radians** and converted to **degrees** for easy reading
 ## Project layout
 
 ```
+AxisDisplay.xcodeproj/                  – Xcode project
 AxisDisplay/
-├── Package.swift
 └── Sources/
     └── AxisDisplay/
-        ├── AxisDisplayApp.swift   – @main SwiftUI app entry point
-        ├── ContentView.swift      – UI: axis rows with colour-coded badges
-        └── MotionManager.swift    – CoreMotion wrapper (ObservableObject)
+        ├── AxisDisplayApp.swift        – @main SwiftUI app entry point
+        ├── ContentView.swift           – UI: axis rows with colour-coded badges
+        ├── MotionManager.swift         – CoreMotion wrapper (ObservableObject)
+        ├── Info.plist                  – App configuration (includes NSMotionUsageDescription)
+        └── Assets.xcassets/            – App icon and accent colour assets
 ```
 
 ## Requirements
@@ -30,8 +32,9 @@ AxisDisplay/
 
 ## Running the app
 
-1. Open `AxisDisplay/Package.swift` in Xcode (File → Open…).
-2. Select your connected iOS device as the run destination.
-3. Press **Run** (⌘R).
+1. Open `AxisDisplay.xcodeproj` in Xcode (double-click the file or use **File → Open…**).
+2. In the project settings, set your development team under **Signing & Capabilities**.
+3. Select your connected iOS device as the run destination.
+4. Press **Run** (⌘R).
 
 The screen will show three rows — one for each axis — updating at 30 Hz as you move the device.
