@@ -22,9 +22,9 @@ struct ContentView: View {
 
     private var axisGrid: some View {
         VStack(spacing: 20) {
-            AxisRow(axis: "X", label: "Roll",  value: motion.x, color: .red)
-            AxisRow(axis: "Y", label: "Pitch", value: motion.y, color: .green)
-            AxisRow(axis: "Z", label: "Yaw",   value: motion.z, color: .blue)
+            AxisRow(axis: "X", label: "Roll",  value: motion.x, accel: motion.accelX, color: .red)
+            AxisRow(axis: "Y", label: "Pitch", value: motion.y, accel: motion.accelY, color: .green)
+            AxisRow(axis: "Z", label: "Yaw",   value: motion.z, accel: motion.accelZ, color: .blue)
         }
         .padding()
         .background(
@@ -52,6 +52,7 @@ private struct AxisRow: View {
     let axis: String
     let label: String
     let value: Double
+    let accel: Double
     let color: Color
 
     var body: some View {
@@ -70,6 +71,9 @@ private struct AxisRow: View {
                     .textCase(.uppercase)
                 Text(String(format: "%.4f rad", value))
                     .font(.system(.body, design: .monospaced))
+                Text(String(format: "%.4f g", accel))
+                    .font(.system(.caption, design: .monospaced))
+                    .foregroundColor(.secondary)
             }
 
             Spacer()
