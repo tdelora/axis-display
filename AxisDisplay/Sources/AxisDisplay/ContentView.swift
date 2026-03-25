@@ -72,7 +72,7 @@ private struct AxisRow: View {
                 Text(String(format: "%.4f rad", value))
                     .font(.system(.body, design: .monospaced))
                 Text(String(format: "%.4f g", accel))
-                    .font(.system(.caption, design: .monospaced))
+                    .font(.system(.body, design: .monospaced))
                     .foregroundColor(.secondary)
             }
 
